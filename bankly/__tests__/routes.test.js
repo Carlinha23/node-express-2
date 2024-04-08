@@ -10,6 +10,9 @@ const bcrypt = require("bcrypt");
 const createToken = require("../helpers/createToken");
 const jwt = require("jsonwebtoken");
 const { SECRET_KEY } = require("../config");
+const util = require('util');
+const TextEncoder = util.TextEncoder;
+
 
 // tokens for our sample users
 const tokens = {};
